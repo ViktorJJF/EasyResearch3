@@ -28,10 +28,10 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         $section->addText($description);
 
         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
-        try {
-            $objWriter->save(storage_path('proyecto1.docx'));
-        } catch (Exception $e) {
-        }
+        // try {
+        //     $objWriter->save(storage_path('proyecto1.docx'));
+        // } catch (Exception $e) {
+        // }
 
         return response()->download(storage_path('proyecto1.docx'));
     }
