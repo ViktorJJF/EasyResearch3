@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MatrixController2;
 use App\Http\Controllers\MatrixController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 // Types CRUD
 Route::get('/matrix', [MatrixController::class, 'generate']);
+Route::get('/matrix', [MatrixController2::class, 'generate']);
 // Route::post('/types', 'MatrixController@store');
 // Route::put('/types/{id}', 'MatrixController@update');
 // Route::delete('/types/{id}', 'MatrixController@destroy');
