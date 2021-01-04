@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 // Types CRUD
 Route::get('/matrix', [MatrixController::class, 'generate']);
-Route::get('/matrix', [MatrixController2::class, 'generate']);
+Route::get('/matrix2', [MatrixController2::class, 'generate']);
 // Route::post('/types', 'MatrixController@store');
 // Route::put('/types/{id}', 'MatrixController@update');
 // Route::delete('/types/{id}', 'MatrixController@destroy');
